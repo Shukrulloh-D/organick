@@ -1,0 +1,15 @@
+.header { background: #fff; padding: 25px 0; position: sticky; top: 0; z-index: 100; }
+.inner { display: flex; justify-content: space-between; align-items: center; }
+.nav { display: flex; gap: 30px; font-weight: 500; color: var(--primary); font-size: 15px; align-items: center; }
+.navItem { position: relative; cursor: pointer; padding: 10px 0; }
+.navItem:hover { color: var(--secondary); }
+.dropdown { position: absolute; top: 100%; left: 0; background: #fff; box-shadow: 0 10px 30px rgba(0,0,0,0.1); border-radius: 10px; padding: 15px 0; min-width: 200px; display: flex; flex-direction: column; opacity: 0; visibility: hidden; transition: 0.3s; }
+.navItem:hover .dropdown { opacity: 1; visibility: visible; }
+.dropdown a { padding: 10px 20px; transition: 0.2s; }
+.dropdown a:hover { background: #F1F8F4; color: var(--secondary); padding-left: 25px; }
+.searchWrap { display: flex; align-items: center; background: #FAFAFA; border-radius: 36px; padding: 5px 5px 5px 20px; width: 280px; }
+.searchInput { border: none; background: transparent; outline: none; flex: 1; font-size: 14px; }
+.searchBtn { background: var(--secondary); color: #fff; width: 45px; height: 45px; border-radius: 50%; display: flex; align-items: center; justify-content: center; }
+.actions { display: flex; align-items: center; gap: 15px; }
+.cartBtn { display: flex; align-items: center; gap: 10px; border: 1px solid #E0E0E0; padding: 5px 20px 5px 5px; border-radius: 36px; font-weight: 600; color: var(--primary); }
+.cartIcon { background: var(--primary); color: #fff; width: 45px; height: 45px; border-radius: 50%; display: flex; align-items: center; justify-content: center; }

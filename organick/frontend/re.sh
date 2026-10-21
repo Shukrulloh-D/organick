@@ -1,6 +1,5 @@
 #!/bin/bash
 # В папке organick
-npm create vite@latest frontend -- --template react
 cd frontend
 npm install
 npm install axios react-router-dom @tanstack/react-query zustand
