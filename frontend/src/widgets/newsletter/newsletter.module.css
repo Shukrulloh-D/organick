@@ -1,0 +1,8 @@
+.section { padding: 100px 0; }
+.wrapper { background: url('/images/newsletter-bg.jpg') center/cover; border-radius: 30px; padding: 80px 70px; display: flex; justify-content: space-between; align-items: center; position: relative; overflow: hidden; }
+.overlay { position: absolute; inset: 0; background: rgba(39, 76, 91, 0.7); z-index: 1; }
+.title { position: relative; z-index: 2; color: #fff; font-size: 45px; max-width: 400px; line-height: 1.2; }
+.form { position: relative; z-index: 2; display: flex; gap: 10px; }
+.input { padding: 20px 30px; border-radius: 16px; border: none; width: 350px; font-size: 16px; outline: none; }
+.btn { background: var(--primary); color: #fff; padding: 20px 40px; border-radius: 16px; font-weight: bold; font-size: 16px; transition: 0.3s; }
+.btn:hover { background: var(--secondary); }

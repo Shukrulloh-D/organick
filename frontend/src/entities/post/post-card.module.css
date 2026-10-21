@@ -1,0 +1,10 @@
+.card { border-radius: 30px; overflow: hidden; background: #fff; box-shadow: 0 10px 30px rgba(0,0,0,0.05); position: relative; }
+.imageWrap { position: relative; }
+.image { width: 100%; height: 250px; object-fit: cover; }
+.dateBadge { position: absolute; top: 20px; left: 20px; background: var(--primary); color: #fff; width: 60px; height: 60px; border-radius: 50%; display: flex; flex-direction: column; align-items: center; justify-content: center; font-weight: bold; font-size: 14px; }
+.content { padding: 30px; background: #fff; margin: -30px 20px 20px; border-radius: 30px; position: relative; box-shadow: 0 10px 20px rgba(0,0,0,0.05); }
+.author { font-size: 14px; color: var(--text); margin-bottom: 10px; }
+.title { font-size: 20px; color: var(--primary); margin-bottom: 15px; font-family: var(--font-heading); }
+.text { font-size: 14px; color: #777; margin-bottom: 20px; }
+.btn { background: var(--accent); color: var(--primary); padding: 12px 25px; border-radius: 10px; font-weight: bold; display: inline-block; transition: 0.3s; }
+.btn:hover { background: var(--secondary); color: #fff; }

@@ -1,0 +1,36 @@
+.overlay { position: fixed; inset: 0; background: rgba(0,0,0,0.4); z-index: 9999; backdrop-filter: blur(3px); display: flex; justify-content: flex-end; animation: fadeIn 0.3s forwards; }
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+
+.drawer { width: 420px; background: #F9F8F8; height: 100%; padding: 30px; display: flex; flex-direction: column; box-shadow: -10px 0 30px rgba(0,0,0,0.1); animation: slideIn 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards; border-radius: 30px 0 0 30px; }
+@keyframes slideIn { from { transform: translateX(100%); } to { transform: translateX(0); } }
+
+.header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; }
+.title { font-size: 24px; font-family: var(--font-heading); }
+.closeBtn { font-size: 24px; color: var(--primary); transition: 0.3s; }
+.closeBtn:hover { transform: rotate(90deg) scale(1.1); color: red; }
+
+/* Прогресс-бар доставки */
+.shippingBar { background: #EFF6F1; padding: 15px; border-radius: 15px; margin-bottom: 20px; font-size: 13px; }
+.shippingText { margin-bottom: 8px; font-weight: 600; }
+.progressBg { background: #D4D4D4; height: 8px; border-radius: 4px; overflow: hidden; }
+.progressFill { background: var(--secondary); height: 100%; transition: width 0.5s ease-in-out; }
+
+/* Товары */
+.list { flex: 1; overflow-y: auto; display: flex; flex-direction: column; gap: 15px; padding-right: 5px; }
+.item { display: flex; gap: 15px; background: #fff; padding: 15px; border-radius: 20px; box-shadow: 0 4px 15px rgba(0,0,0,0.03); transition: 0.3s; }
+.item:hover { transform: translateX(-5px); box-shadow: 0 8px 20px rgba(0,0,0,0.08); }
+.img { width: 70px; height: 70px; object-fit: contain; background: #F9F8F8; border-radius: 10px; }
+.info { flex: 1; }
+.itemTitle { font-size: 15px; font-family: var(--font-heading); color: var(--primary); margin-bottom: 5px; }
+.itemPrice { font-weight: bold; color: var(--secondary); font-size: 16px; }
+.removeBtn { color: #ff6b6b; font-size: 12px; margin-top: 5px; transition: 0.2s; }
+.removeBtn:hover { color: red; text-decoration: underline; }
+
+/* Футер корзины */
+.footer { border-top: 1px solid #D4D4D4; padding-top: 20px; margin-top: 20px; }
+.totalRow { display: flex; justify-content: space-between; font-size: 22px; font-weight: bold; font-family: var(--font-heading); color: var(--primary); margin-bottom: 20px; }
+.checkoutBtn { width: 100%; padding: 18px; background: var(--primary); color: #fff; border-radius: 16px; font-weight: bold; font-size: 16px; transition: 0.3s; }
+.checkoutBtn:hover { background: var(--secondary); transform: translateY(-2px); box-shadow: 0 10px 20px rgba(126, 182, 147, 0.4); }
+
+.empty { text-align: center; color: var(--text); margin-top: 50px; font-size: 18px; }
+.emptyIcon { font-size: 60px; margin-bottom: 20px; opacity: 0.5; }
